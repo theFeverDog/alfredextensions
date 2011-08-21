@@ -1,1 +1,7 @@
-Some extensions for Alfred App. See extension for more details.
+Currency converter - An extension for Alfred based on Google Currency Converter.
+-------------------------------------------------------------------------------.
+A default target currency can be set in the script (default = EUR), and the extension can be used in different ways:
+convert 1 GBP to EUR
+convert 1.234 USD GBP
+convert 2.345 SEK
+(-> the last one converts to the default currency)
