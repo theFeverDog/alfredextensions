@@ -1,3 +1,8 @@
+# SHELL SCRIPT NOTES:
+# -------------------
+# Before using this in alfred replace $1 in the following line with {query}.
+QUERY="$1"
+
 # USAGE:
 # ------
 # convert 10 <3 Letter Code> [to <3 Letter Code>]
@@ -17,10 +22,10 @@ DEFAULT='EUR'
 # SCRIPT:
 # -------
 # Split Alfred query into parts:
-AMOUNT=`echo '{query}' | awk '{ print $1; }' | sed 's/,/./g'`
-INPUT=`echo '{query}' | awk '{ print toupper($2); }'  `
-TO=`echo '{query}' | awk '{ print toupper($3); }'`
-TARGET=`echo '{query}' | awk '{ print toupper($4); }'`
+AMOUNT=`echo $QUERY | awk '{ print $1; }' | sed 's/,/./g'`
+INPUT=`echo $QUERY | awk '{ print toupper($2); }'  `
+TO=`echo $QUERY| awk '{ print toupper($3); }'`
+TARGET=`echo $QUERY | awk '{ print toupper($4); }'`
 
 # Check if we have TO/target, otherwise use default target.
 if [ "$TO" = "" ]; then
