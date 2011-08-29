@@ -54,6 +54,5 @@ if [ "${#INPUT}" -le 3 ] & [ "${#TARGET}" -le 3 ]; then
     echo 'Maybe you want to provide different currencies or change the default currency?'
   fi
 else
-  echo 'Invalid usage.'
   echo 'Please use 3-letter currency codes (e.g. USD) or use one of the following symbols: $, €, £, ¥.'
 fi

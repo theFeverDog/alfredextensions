@@ -1,7 +1,10 @@
 Currency converter - An extension for Alfred based on Google Currency Converter.
 -------------------------------------------------------------------------------.
-A default target currency can be set in the script (default = EUR), and the extension can be used in different ways:
+A default target currency can be set in the script (default = EUR), and the extension can be used in different ways, with 3-letter currency codes or the following currency symbols: $, €, £, ¥.
+
 convert 1 GBP to EUR
 convert 1.234 USD GBP
+convert 1.2 $ to £
 convert 2.345 SEK
-(-> the last one converts to the default currency)
+convert 2.345 $
+(-> the last two convert to the default currency)
